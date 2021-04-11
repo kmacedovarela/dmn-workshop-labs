@@ -16,6 +16,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
+    <!--
+    <version.org.kie>7.18.0.Final-redhat-00001</version.org.kie>
+    -->
     <version.org.kie>7.48.0.Final-redhat-00006</version.org.kie>
   </properties>
 

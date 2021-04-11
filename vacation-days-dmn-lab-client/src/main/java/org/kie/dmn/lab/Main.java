@@ -1,5 +1,7 @@
 package org.kie.dmn.lab;
 
+import org.kie.api.builder.KieScannerFactoryService;
+import org.kie.api.internal.weaver.KieWeaverService;
 import org.kie.dmn.api.core.DMNContext;
 import org.kie.dmn.api.core.DMNDecisionResult;
 import org.kie.dmn.api.core.DMNResult;
@@ -18,11 +20,12 @@ public class Main {
 
     private static final String KIE_SERVER_URL = "http://localhost:8080/kie-server/services/rest/server";
 
-    private static final String CONTAINER_ID = "vacations-days-decisions";
+    private static final String CONTAINER_ID = "vacation-days-decisions";
 
-    private static final String USERNAME = "wbadmin";
+    private static final String USERNAME = "pamAdmin";
 
-    private static final String PASSWORD = "wbadmin";
+    private static final String PASSWORD = "redhatpam1!";
+
     public static void main(String[] args) {
         CredentialsProvider credentialsProvider = new EnteredCredentialsProvider(USERNAME, PASSWORD);
         KieServicesConfiguration kieServicesConfig = KieServicesFactory.newRestConfiguration(KIE_SERVER_URL, credentialsProvider);
